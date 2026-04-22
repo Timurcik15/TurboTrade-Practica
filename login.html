@@ -1,43 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - TurboTrade</title>
+    <title>TurboTrade - Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="dark-theme">
 
-    <main class="login-login">
-        <section class="login-container">
-            <div class="login-box">
-                <h2>Autentificare</h2>
-                <p>Introdu datele contului tău</p>
+    <nav class="navbar">
+        <div class="logo">TurboTrade</div>
+        <ul class="navbtn">
+            <li><a href="catalog.html">STOC</a></li>
+            <li><a href="servicii.html">SERVICII</a></li>
+            <li><a href="finantare.html">FINANȚARE</a></li>
+            <li><a href="despre-noi.html">DESPRE NOI</a></li>
+            <li class="login-btn-outline"><a href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>
 
-                <form action="#">
-                    <div class="input-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="nume@exemplu.com" required>
-                    </div>
-
-                    <div class="input-group">
-                        <label for="password">Parolă</label>
-                        <input type="password" id="password" placeholder="••••••••" required>
-                    </div>
-
-                    <div class="forgot-password">
-                        <a href="#">Ai uitat parola?</a>
-                    </div>
-
-                    <button type="submit" class="btn-login">Intră în cont</button>
-
-                    <div class="register-link">
-                        <span>Nu ai un cont?</span>
-                        <a href="#">Înregistrează-te acum</a>
-                    </div>
-                </form>
+    <main class="login-container">
+        <form class="login-box">
+            
+            <div class="input-group">
+                <label for="email">EMAIL</label>
+                <input type="email" id="email" placeholder="adresa@email.com" required>
             </div>
-        </section>
+
+            <div class="input-group">
+                <label for="password">PAROLĂ</label>
+                <input type="password" id="password" placeholder="••••••••" required>
+            </div>
+
+            <div class="form-options">
+                <label class="remember-me">
+                    <input type="checkbox"> Ține-mă minte
+                </label>
+                <a href="#" class="forgot-password">Ai uitat parola?</a>
+            </div>
+
+            <button type="submit" class="submit-btn">AUTENTIFICĂ-TE</button>
+
+            <div class="register-link">
+                Nu ai cont? <a href="#">Înregistrează-te</a>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="benefits-section">
+                <h4>BENEFICII CONT</h4>
+                <ul>
+                    <li>Acces la oferte exclusive</li>
+                    <li>Istoric achiziții și service</li>
+                    <li>Programări rapide</li>
+                    <li>Recomandări personalizate</li>
+                </ul>
+            </div>
+
+        </form>
     </main>
 
 </body>

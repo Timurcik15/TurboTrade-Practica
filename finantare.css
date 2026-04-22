@@ -1,0 +1,232 @@
+/* =========================================
+   1. SETĂRI GLOBALE (DARK THEME)
+   ========================================= */
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================================
+   2. MENIUL DE NAVIGARE (NAVBAR) - Comun pe toate paginile
+   ========================================= */
+nav, .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 60px;
+}
+
+.logo, nav .logo {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+}
+
+.navbtn {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbtn a {
+    text-decoration: none;
+    color: #888;
+    font-size: 12px;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+    text-transform: uppercase;
+}
+
+.navbtn a:hover, 
+.navbtn a.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Butonul de Login din meniu */
+.login a, 
+.login-btn-outline a {
+    color: #fff !important;
+    border: 1px solid #333;
+    padding: 10px 25px;
+    border-radius: 3px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.login a:hover, 
+.login-btn-outline a:hover {
+    background-color: #fff;
+    color: #000 !important;
+}
+
+/* =========================================
+   5. PAGINA DE FINANȚARE (CALCULATOR)
+   ========================================= */
+.calculator-page {
+    padding-bottom: 50px;
+}
+
+.page-header {
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin: 0 0 10px 0;
+}
+
+.page-header p {
+    color: #637792;
+    font-size: 14px;
+    margin: 0;
+}
+
+.calculator-container {
+    display: flex;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 60px;
+    padding: 0 20px;
+}
+
+.calc-inputs {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.calc-results {
+    flex: 1.2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 15px;
+}
+
+.input-header .label {
+    color: #637792;
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.input-header .value {
+    font-size: 20px;
+    color: #fff;
+}
+
+.value-container { text-align: right; }
+.value-container .sub-value {
+    display: block;
+    color: #637792;
+    font-size: 11px;
+    margin-top: 2px;
+}
+
+.input-bounds {
+    display: flex;
+    justify-content: space-between;
+    color: #4a5a75;
+    font-size: 11px;
+    margin-top: 10px;
+}
+
+/* Slidere Customizate */
+.custom-slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #fff;
+    border-radius: 3px;
+    outline: none;
+}
+
+.custom-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    border: 2px solid #000;
+}
+
+/* Carduri Rezultate */
+.result-card {
+    border: 1px solid #1a1a1a;
+    background-color: transparent;
+    padding: 30px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.primary-result {
+    text-align: center;
+    padding: 50px 30px;
+}
+
+.result-label {
+    color: #637792;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.result-value-large {
+    font-size: 48px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+.result-subtext {
+    color: #637792;
+    font-size: 12px;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.result-value {
+    font-size: 20px;
+    color: #fff;
+}
+
+.calc-note {
+    border: 1px solid #1a1a1a;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.calc-note p {
+    color: #637792;
+    font-size: 11px;
+    margin: 0;
+    line-height: 1.5;
+}

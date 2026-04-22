@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboTrade - Finanțare</title>
+    <link rel="stylesheet" href="finantare.css">
+</head>
+<body class="dark-theme">
+
+    <nav class="navbar">
+        <div class="logo">TurboTrade</div>
+        <ul class="navbtn">
+            <li><a href="catalog.html">STOC</a></li>
+            <li><a href="servicii.html">SERVICII</a></li>
+            <li><a href="finantare.html" class="active">FINANȚARE</a></li>
+            <li><a href="despre-noi.html">DESPRE NOI</a></li>
+            <li class="login-btn-outline"><a href="login.html">LOGIN</a></li>
+        </ul>
+    </nav>
+
+    <main class="calculator-page">
+        
+        <header class="page-header">
+            <h1>FINANȚARE</h1>
+            <p>Calculează plata lunară</p>
+        </header>
+
+        <section class="calculator-container">
+            
+            <div class="calc-inputs">
+                
+                <div class="input-group">
+                    <div class="input-header">
+                        <span class="label">PREȚ VEHICUL</span>
+                        <span class="value">150.000 EUR</span>
+                    </div>
+                    <input type="range" min="50000" max="500000" value="150000" class="custom-slider">
+                    <div class="input-bounds">
+                        <span>€50k</span>
+                        <span>€500k</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-header">
+                        <span class="label">AVANS</span>
+                        <div class="value-container">
+                            <span class="value">30.000 EUR</span>
+                            <span class="sub-value">20.0%</span>
+                        </div>
+                    </div>
+                    <input type="range" min="0" max="75000" value="30000" class="custom-slider">
+                    <div class="input-bounds">
+                        <span>€0</span>
+                        <span>75.000 EUR</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-header">
+                        <span class="label">RATĂ DOBÂNDĂ</span>
+                        <span class="value">5.50%</span>
+                    </div>
+                    <input type="range" min="0" max="15" value="5.5" step="0.1" class="custom-slider">
+                    <div class="input-bounds">
+                        <span>0%</span>
+                        <span>15%</span>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <div class="input-header">
+                        <span class="label">PERIOADĂ</span>
+                        <span class="value">60 luni</span>
+                    </div>
+                    <input type="range" min="12" max="84" value="60" step="12" class="custom-slider">
+                    <div class="input-bounds">
+                        <span>12 luni</span>
+                        <span>84 luni</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="calc-results">
+                
+                <div class="result-card primary-result">
+                    <span class="result-label">PLATĂ LUNARĂ</span>
+                    <h2 class="result-value-large">2.292 EUR</h2>
+                    <span class="result-subtext">pe 5 ani</span>
+                </div>
+
+                <div class="results-grid">
+                    <div class="result-card">
+                        <span class="result-label">TOTAL CREDIT</span>
+                        <span class="result-value">120.000 EUR</span>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-label">DOBÂNDĂ TOTALĂ</span>
+                        <span class="result-value">17.528 EUR</span>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-label">TOTAL DE PLATĂ</span>
+                        <span class="result-value">137.528 EUR</span>
+                    </div>
+                    <div class="result-card">
+                        <span class="result-label">AVANS</span>
+                        <span class="result-value">30.000 EUR</span>
+                    </div>
+                </div>
+
+                <div class="calc-note">
+                    <p>Notă: Acesta este doar un calculator estimativ. Ratele reale pot varia în funcție de scorul de credit și condițiile pieței.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
