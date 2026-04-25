@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; 
+    font-family: 'Inter', sans-serif; 
+    overflow-x: hidden; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 20px;
+    border-right: 2px solid rgba(255, 255, 255, 0.5); 
+}
+
+.navbtn {
+    display: flex;
+    list-style: none;
+    gap: 40px; 
+}
+
+.navbtn a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+.navbtn a:hover {
+    opacity: 0.7;
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 0 auto 80px auto;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 60px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: #ffffff !important;
+}
+
+/* Povestea Noastră */
+.about-text p {
+    color: #aaaaaa;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* Evoluția Noastră (Timeline) */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.timeline-year {
+    font-size: 36px;
+    font-weight: 200;
+    color: #2a2a2a; 
+    min-width: 100px;
+    line-height: 1;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff !important;
+    margin-bottom: 8px;
+}
+
+.timeline-content p {
+    color: #777777;
+    font-size: 14px;
+}
+
+/* Valorile Noastre (Grid) */
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 60px;
+    row-gap: 40px;
+}
+
+.value-box {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+}
+
+.value-box h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #ffffff !important;
+    margin-bottom: 15px;
+}
+
+.value-box p {
+    color: #777777;
+    font-size: 14px;
+}
+
+/* Caseta de Contact */
+.contact-section {
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-box {
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    background-color: rgba(255, 255, 255, 0.02);
+    padding: 60px 80px;
+    text-align: center;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.contact-box h2 {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    color: #ffffff !important;
+}
+
+.contact-box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}

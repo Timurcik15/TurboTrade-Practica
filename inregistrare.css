@@ -104,4 +104,18 @@ nav {
     font-size: 13px;
 }
 
+.submit-btn {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #222;
+    padding: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 10px;
+    transition: all 0.3s ease;
+}
+
 
