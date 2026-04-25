@@ -306,3 +306,38 @@ body.dark-theme {
     left: 0;
     color: #aaa;
 }
+
+/* Stilizare mesaje feedback */
+.feedback-msg {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.feedback-msg.error {
+    background-color: #ff4d4d;
+    color: white;
+    border: 1px solid #cc0000;
+}
+
+.feedback-msg.success {
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid #2e7d32;
+}
+
+/* Animație CSS simplă pentru eroare la buton (Sarcina g) */
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+.btn-error-shake {
+    animation: shake 0.4s ease-in-out;
+    background-color: #ff4d4d !important;
+}

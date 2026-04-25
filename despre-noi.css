@@ -62,7 +62,6 @@ nav {
     color: #ffffff !important;
 }
 
-/* Povestea Noastră */
 .about-text p {
     color: #aaaaaa;
     font-size: 16px;
@@ -70,7 +69,6 @@ nav {
     margin-bottom: 25px;
 }
 
-/* Evoluția Noastră (Timeline) */
 .timeline {
     display: flex;
     flex-direction: column;
@@ -103,7 +101,6 @@ nav {
     font-size: 14px;
 }
 
-/* Valorile Noastre (Grid) */
 .values-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -128,7 +125,6 @@ nav {
     font-size: 14px;
 }
 
-/* Caseta de Contact */
 .contact-section {
     padding-bottom: 100px;
     display: flex;
