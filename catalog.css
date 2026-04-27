@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000; 
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; 
+    overflow-x: hidden; 
+    color: #ffffff; 
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; 
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 20px;
+    border-right: 2px solid rgba(255, 255, 255, 0.5); 
+}
+
+.navbtn {
+    display: flex;
+    list-style: none;
+    gap: 40px; 
+    align-items: center;
+}
+
+.navbtn a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: opacity 0.3s;
+}
+
+.navbtn a:hover {
+    opacity: 0.7;
+}
+
+.login a {
+    font-weight: bold;
+    border: 1px solid white;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+.login a:hover {
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.buton-stoc {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-family: inherit; 
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 0;
+    transition: opacity 0.3s;
+    outline: none;
+}
+
+.buton-stoc:hover {
+    opacity: 0.7;
+}
+
+.dropdown-continut {
+    display: none; 
+    position: absolute;
+    top: 30px; 
+    left: -10px;
+    background-color: #111111; 
+    min-width: 160px;
+    border: 1px solid #333333; 
+    border-radius: 4px;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.dropdown-continut::before {
+    content: "";
+    position: absolute;
+    top: -15px; 
+    left: 0;
+    width: 100%;
+    height: 15px;
+}
+
+.dropdown-continut a {
+    display: block; 
+    padding: 10px 20px;
+    transition: background 0.2s;
+}
+
+.dropdown-continut a:hover {
+    background-color: #333333; 
+    opacity: 1; 
+}
+
+.dropdown:hover .dropdown-continut {
+    display: block;
+}
+
+.catalog-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 120px 20px 50px 20px; 
+}
+
+#titlu-catalog {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.grid-masini {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 35px;
+}
+
+.card-masina {
+    background-color: #0a0a0a; 
+    border: 1px solid #222222;
+    border-radius: 10px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s ease;
+}
+
+.card-masina:hover {
+    transform: translateY(-8px);
+    border-color: #444444;
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.05); 
+}
+
+.imagine-masina {
+    width: 100%;
+    height: 220px;
+    background: linear-gradient(135deg, #111111 0%, #1a1a1a 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555555;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #222;
+}
+
+.detalii-masina {
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.detalii-masina h3 {
+    margin: 0 0 15px 0;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.specificatii {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 25px 0;
+    color: #999999;
+    font-size: 14px;
+}
+
+.specificatii li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #1a1a1a;
+    padding-bottom: 6px;
+    display: flex;
+    justify-content: space-between; 
+}
+
+.pret {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.btn-detalii {
+    background-color: transparent; 
+    color: #ffffff;
+    border: 2px solid #ffffff; 
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.btn-detalii:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.mesaj-sistem {
+    text-align: center;
+    font-size: 16px;
+    color: #cccccc;
+    background-color: #111111;
+    border: 1px solid #333333;
+    border-left: 4px solid #ffffff; 
+    border-radius: 8px;
+    grid-column: 1 / -1;
+    padding: 30px;
+}

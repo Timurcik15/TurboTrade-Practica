@@ -1,0 +1,36 @@
+[
+  { "marca": "BMW", "model": "Seria 3", "an": 2021, "pret": 32000, "imagine": "BMW_S3.png" },
+  { "marca": "BMW", "model": "X5", "an": 2023, "pret": 65000, "imagine": "BMW_X5.png" },
+  { "marca": "BMW", "model": "M4", "an": 2022, "pret": 75000, "imagine": "BMW_M4.png" },
+  { "marca": "BMW", "model": "Seria 5", "an": 2020, "pret": 38000, "imagine": "BMW_S5.png" },
+  { "marca": "BMW", "model": "X3", "an": 2022, "pret": 45000, "imagine": "BMW_X3.png" },
+  { "marca": "BMW", "model": "i4", "an": 2023, "pret": 58000, "imagine": "BMW_i4.png" },
+
+  { "marca": "Audi", "model": "A4", "an": 2020, "pret": 25000, "imagine": "Audi_A4.png" },
+  { "marca": "Audi", "model": "Q5", "an": 2022, "pret": 48000, "imagine": "Audi_Q5.png" },
+  { "marca": "Audi", "model": "A6", "an": 2021, "pret": 42000, "imagine": "Audi_A6.png" },
+  { "marca": "Audi", "model": "RS6", "an": 2023, "pret": 110000, "imagine": "Audi_RS6.png" },
+  { "marca": "Audi", "model": "Q7", "an": 2021, "pret": 55000, "imagine": "Audi_Q7.png" },
+  { "marca": "Audi", "model": "A3", "an": 2022, "pret": 29000, "imagine": "Audi_A3.png" },
+
+  { "marca": "Mercedes", "model": "C-Class", "an": 2022, "pret": 41000, "imagine": "MB_C.png" },
+  { "marca": "Mercedes", "model": "E-Class", "an": 2021, "pret": 49000, "imagine": "MB_E.png" },
+  { "marca": "Mercedes", "model": "GLE", "an": 2023, "pret": 72000, "imagine": "MB_GLE.png" },
+  { "marca": "Mercedes", "model": "S-Class", "an": 2022, "pret": 95000, "imagine": "MB_S.png" },
+  { "marca": "Mercedes", "model": "GLA", "an": 2021, "pret": 35000, "imagine": "MB_GLA.png" },
+  { "marca": "Mercedes", "model": "CLA", "an": 2022, "pret": 38000, "imagine": "MB_CLA.png" },
+
+  { "marca": "Toyota", "model": "Camry", "an": 2023, "pret": 30000, "imagine": "Toyota_Camry.png" },
+  { "marca": "Toyota", "model": "Corolla", "an": 2022, "pret": 22000, "imagine": "Toyota_Corolla.png" },
+  { "marca": "Toyota", "model": "RAV4", "an": 2021, "pret": 33000, "imagine": "Toyota_RAV4.png" },
+  { "marca": "Toyota", "model": "Land Cruiser", "an": 2023, "pret": 85000, "imagine": "Toyota_LC.png" },
+  { "marca": "Toyota", "model": "Hilux", "an": 2022, "pret": 35000, "imagine": "Toyota_Hilux.png" },
+  { "marca": "Toyota", "model": "Yaris", "an": 2021, "pret": 18000, "imagine": "Toyota_Yaris.png" },
+
+  { "marca": "Honda", "model": "Civic", "an": 2022, "pret": 24000, "imagine": "Honda_Civic" },
+  { "marca": "Honda", "model": "CR-V", "an": 2023, "pret": 36000, "imagine": "Honda_CRV" },
+  { "marca": "Honda", "model": "Accord", "an": 2021, "pret": 28000, "imagine": "Honda_Accord" },
+  { "marca": "Honda", "model": "HR-V", "an": 2022, "pret": 26000, "imagine": "Honda_HRV" },
+  { "marca": "Honda", "model": "Jazz", "an": 2021, "pret": 19000, "imagine": "Honda_Jazz" },
+  { "marca": "Honda", "model": "NSX", "an": 2022, "pret": 150000, "imagine": "Honda_NSX" }
+]
