@@ -44,6 +44,11 @@ nav {
     transition: opacity 0.3s;
 }
 
+.logo a, .logo a:visited {
+    color: #ffffff; /* Forțează culoarea albă mereu */
+    text-decoration: none; /* Elimină liniuța de sub link, dacă există */
+}
+
 .navbtn a:hover {
     opacity: 0.7;
 }

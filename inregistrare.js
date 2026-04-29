@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (telefon.length <= 9) {
+        if (telefon.length < 8) {
             afiseazaMesaj('Numărul de telefon trebuie să fie minim de 9 cifre', 'eroare');
             return;
         }

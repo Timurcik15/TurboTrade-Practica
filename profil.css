@@ -1,0 +1,165 @@
+/* Resetare de bază pentru a elimina marginile implicite ale browserului */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* --- Stiluri pentru Navbar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111; /* Un negru elegant pentru tema auto */
+    padding: 20px 50px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbtn {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navbtn li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.navbtn li a:hover {
+    color: #d4af37; /* Auriu/Galben specific segmentului de lux */
+}
+
+/* Stil specific pentru butoanele de Login/Profil/Logout */
+.login-btn-outline a {
+    border: 2px solid #d4af37;
+    padding: 8px 20px;
+    border-radius: 4px;
+    color: #d4af37 !important;
+}
+
+.login-btn-outline a:hover {
+    background-color: #d4af37;
+    color: #111 !important;
+}
+
+/* --- Stiluri pentru secțiunea principală (Hero) --- */
+.herocontent {
+    text-align: center;
+    padding: 120px 20px;
+    background-color: #e9ecef;
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.herocontent h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+    color: #111;
+}
+
+.herocontent p {
+    font-size: 22px;
+    color: #555;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Containerul care ține cardul pe centrul ecranului (sub navbar) */
+.profil-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh; 
+    background-color: #000; /* Fundal negru */
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Cardul principal cu informații */
+.profil-box {
+    background-color: #111; /* Gri foarte închis */
+    border: 1px solid #d4af37; /* Contur auriu */
+    border-radius: 10px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px; 
+    box-shadow: 0 5px 20px rgba(212, 175, 55, 0.15); /* Umbră aurie subtilă */
+}
+
+/* Titlul din interiorul cardului */
+.profil-box h2 {
+    color: #d4af37;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    letter-spacing: 2px;
+}
+
+/* Grupurile de informații (Email, Status, etc.) */
+.info-grup {
+    margin-bottom: 25px;
+    border-bottom: 1px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Textele mici, descriptive (ex: "Email cont:") */
+.info-grup .eticheta {
+    color: #888;
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* Valorile reale (ex: adresa de email efectivă) */
+.info-grup .valoare {
+    color: #fff; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Butonul de Delogare din interiorul profilului */
+.logout-btn-box {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 35px; 
+    background-color: transparent;
+    border: 1px solid #ff4d4d; /* Roșu pentru acțiunea de ieșire */
+    color: #ff4d4d;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logout-btn-box:hover {
+    background-color: #ff4d4d;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.4);
+}

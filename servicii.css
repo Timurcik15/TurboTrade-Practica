@@ -61,17 +61,9 @@ nav {
     opacity: 0.7;
 }
 
-/* Stil special pentru butonul de Login */
-.login a {
-    font-weight: bold;
-    border: 1px solid white;
-    padding: 8px 20px;
-    border-radius: 4px;
-}
-
-.login-btn:hover {
-    background: #ffffff;
-    color: #000000;
+.logo a, .logo a:visited {
+    color: #ffffff; /* Forțează culoarea albă mereu */
+    text-decoration: none; /* Elimină liniuța de sub link, dacă există */
 }
 
 /* Secțiunea Titlu Pagina */

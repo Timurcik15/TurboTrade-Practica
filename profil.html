@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurboTrade - Profilul Meu</title>
+    <link rel="stylesheet" href="profil.css">
+</head>
+<body style="background-color: #000;">
+
+
+    <nav class="navbar">
+        <div class="logo"><a href="index.html">TurboTrade</a></div>
+        <ul class="navbtn">
+            <li><a href="catalog.html">STOC</a></li>
+            <li><a href="servicii.html">SERVICII</a></li>
+            <li><a href="finantare.html">FINANȚARE</a></li>
+            <li><a href="despre-noi.html">DESPRE NOI</a></li>
+            
+            <li class="login-btn-outline" id="nav-login"><a href="login.html">LOGIN</a></li>
+            <li class="login-btn-outline" id="nav-profil" style="display: none;"><a href="profil.html">PROFIL</a></li>
+            
+        </ul>
+    </nav>
+
+    <main class="profil-wrapper">
+        <div class="profil-box">
+            
+            <h2>Profilul Meu</h2>
+            
+            <div class="info-grup">
+                <span class="eticheta">Email cont:</span>
+                <span id="user-email" class="valoare">Se încarcă...</span>
+            </div>
+
+            <div class="info-grup">
+                <span class="eticheta">Status cont:</span>
+                <span class="valoare" style="color: #4CAF50;">Activ</span>
+            </div>
+
+            <button id="logout-profil-btn" class="logout-btn-box">DELOGARE CONT</button>
+
+        </div>
+    </main>
+
+    <script src="profil.js"></script>
+    <script src="navbar.js"></script>
+
+</body>
+</html>

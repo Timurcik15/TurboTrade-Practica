@@ -46,13 +46,9 @@ nav {
 .navbtn a:hover {
     opacity: 0.7;
 }
-
-/* Stil special pentru butonul de Login */
-.login a {
-    font-weight: bold;
-    border: 1px solid white;
-    padding: 8px 20px;
-    border-radius: 4px;
+.logo a, .logo a:visited {
+    color: #ffffff; /* Forțează culoarea albă mereu */
+    text-decoration: none; /* Elimină liniuța de sub link, dacă există */
 }
 
 .herocontent {
@@ -114,31 +110,35 @@ body.dark-theme {
     padding: 30px 60px;
 }
 
-.navbar .logo {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: -0.5px;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111; /* Un negru elegant pentru tema auto */
+    padding: 20px 50px;
 }
 
-.navbar .navbtn {
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.navbtn {
     list-style: none;
     display: flex;
-    gap: 30px;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    gap: 25px;
 }
 
-.navbar .navbtn a {
-    text-decoration: none;
-    color: #888;
-    font-size: 12px;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
-}
-
-.navbar .navbtn a:hover {
+.navbtn li a {
     color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
 /* Butonul de login din meniu */

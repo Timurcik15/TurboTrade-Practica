@@ -21,46 +21,42 @@ nav, .navbar {
     letter-spacing: -0.5px;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111; /* Un negru elegant pentru tema auto */
+    padding: 20px 50px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
 .navbtn {
     list-style: none;
     display: flex;
-    gap: 30px;
     align-items: center;
-    margin: 0;
-    padding: 0;
+    gap: 25px;
 }
 
-.navbtn a {
-    text-decoration: none;
-    color: #888;
-    font-size: 12px;
-    letter-spacing: 1px;
-    transition: color 0.3s ease;
-    text-transform: uppercase;
-}
-
-.navbtn a:hover, 
-.navbtn a.active {
+.navbtn li a {
     color: #fff;
-    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: color 0.3s;
 }
 
-/* Butonul de Login din meniu */
-.login a, 
-.login-btn-outline a {
-    color: #fff !important;
-    border: 1px solid #333;
-    padding: 10px 25px;
-    border-radius: 3px;
-    font-weight: bold;
-    display: inline-block;
+.logo a, .logo a:visited {
+    color: #ffffff; /* Forțează culoarea albă mereu */
+    text-decoration: none; /* Elimină liniuța de sub link, dacă există */
 }
 
-.login a:hover, 
-.login-btn-outline a:hover {
-    background-color: #fff;
-    color: #000 !important;
-}
 
 .calculator-page {
     padding-bottom: 50px;

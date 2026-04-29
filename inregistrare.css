@@ -48,6 +48,11 @@ nav {
     opacity: 0.7;
 }
 
+.logo a, .logo a:visited {
+    color: #ffffff; /* Forțează culoarea albă mereu */
+    text-decoration: none; /* Elimină liniuța de sub link, dacă există */
+}
+
 .register-container {
     flex: 1;
     display: flex;
